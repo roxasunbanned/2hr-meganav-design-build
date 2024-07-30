@@ -1,0 +1,226 @@
+:root {
+    --nutritics-plum: #B9115B;
+    --nutritics-orange: #EC671B;
+    --nutritics-blue: #1A6AA1;
+    --nutritics-off-white: #FDF4EB;
+    --nutritics-light-grey: #EDEDED;
+    --nutritics-dark-grey: #5B5B5B;
+    --nutritics-bg-dark: #1e272e;
+    --nutritics-white: #FFFFFF;
+    --padding: 1rem;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--nutritics-dark-grey);
+}
+
+.h-pad {
+    padding-left: 186px;
+    padding-right: 159px;
+}
+
+header {
+    min-height: 227px;
+}
+
+#header__top {
+    background-color: var(--nutritics-light-grey);
+    padding: 14px 186px;
+    font-size: 14px;
+}
+
+#header__center {   
+    height: 118px;
+    padding: 39px 159px 39px 186px;
+    background-color: var(--nutritics-bg);
+}
+
+#header__bottom {
+    background-color: var(--nutritics-plum);
+    height: 60px;
+    color: white;
+}
+
+#header__bottom__close {
+    right: 15px;
+    cursor: pointer;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item--has-children::after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 4.5px;
+    background-image: url("imgs/chevron.svg");
+    background-size: cover;
+    position: absolute;
+    right: -20px;
+    top: calc(50% - 2.25px);
+}
+
+.toggle-switch {
+    position: relative;
+    height: 17px;
+    width: 27px;
+    display: inline-block;
+    background-color: var(--nutritics-white);
+    margin: 2px 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid 1px var('--nutritics-light-grey');
+    box-shadow: inset 1px 1px 9px -3px rgba(4, 4, 4, 0.08), 1px 2px 6px -2px rgba(0, 0, 0, 0.01);
+}
+
+.toggle-item {
+    cursor: pointer;
+}
+
+.toggle-switch--active {
+    background-color: var(--nutritics-orange);
+    border: solid 1px transparent;
+}
+
+.toggle-switch__knob {
+    position: absolute;
+    top: 1.25px;
+    left: 1px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background-color: var(--nutritics-blue);
+    border: solid 1px rgba(126, 126, 126, 0.07);
+    border-radius: 13px;
+}
+
+.toggle-switch, .toggle-switch .toggle-switch__knob, #header__bottom {
+    -moz-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.toggle-switch__knob--active {
+    left: 11px;
+}
+
+.search-icon {
+    height: 30px;
+    width: 30px;
+    left: -39px;
+    top: calc(50% - 15px);
+}
+
+.nav-list {
+    gap: 52px;
+}
+
+.nav-list__child {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 28px 24px;
+    box-sizing: border-box;
+    right: -40px;
+    top: calc(100% + 13px);
+    z-index: 10;
+    box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    white-space: nowrap;
+    color: var(--nutritics-dark-grey);
+}
+
+.nav-list__child li {
+    margin-bottom: 10px;
+}
+
+.nav-list__child::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-bottom-color: var(--nutritics-white);
+    border-top: 0;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.center__cta {
+    font-size: 18px;
+    line-height: 15px;
+    padding: 16px 26px;
+    box-sizing: border-box;
+    color: var(--nutritics-white);
+}
+
+.center__cta--grey {
+    background-color: var(--nutritics-dark-grey);
+}
+
+.center__cta--orange {
+    background-color: var(--nutritics-orange);
+}
+
+#header__bottom__close {
+    right: 15px;
+}
+
+#main {
+    min-height: calc(100vh - 332px);
+    background-color: var(--nutritics-bg)
+}
+
+.main__container {
+    margin-top: 69px;
+}
+
+footer {
+    height: 105px;
+    padding: 29px 0;
+    background-color: var(--nutritics-orange);
+}
+
+.footer__text {
+    color: var(--nutritics-white);
+    font-size: 40px;
+    line-height: 60px; /* 150% */
+}
+
+.footer__cta {
+    font-size: 18px;
+    line-height: 15px;
+    padding: 16px 26px;
+    box-sizing: border-box;
+    color: var(--nutritics-white);
+    text-transform: capitalize;
+    border: 2px solid var(--nutritics-white);
+    margin-left: 100px;
+}
+
+/* Dark Mode */
+
+.body--dark {
+    background-color: var(--nutritics-bg-dark) !important;
+    color: var(--nutritics-white) !important;
+}
+
+.bg--dark {
+    background-color: var(--nutritics-bg-dark) !important;
+    color: var(--nutritics-white) !important;
+}
+
+.header__top--dark {
+    background-color: var(--nutritics-dark-grey) !important;
+    color: var(--nutritics-white) !important;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2hr Meganav Build</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+        <div id="header__top" class="flex h-pad justify-between">
+            <ul class="gap-4 flex w-32 basis-1/3">
+                <li class="toggle-item flex justify-center">
+                    <div class="toggle-switch">
+                        <div class="toggle-switch__knob"></div>
+                    </div>
+                     High Contrast
+                </li>
+                <li class="">
+                    <a href="#">
+                        Product Support
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-list flex basis-1/3 justify-end items-center">
+                <li class="nav-item">
+                    <img src="imgs/Search Icon.svg" class="search-icon absolute"alt="search"/>
+                    <a href="#">
+                        Search
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        Contact Sales
+                    </a>
+                </li>
+                <li class="nav-item nav-item--has-children relative items-center">
+                    <a href="#">
+                        Our Story
+                    </a>
+                    <ul class="nav-list__child">
+                        <li class="nav-item">
+                            Company
+                        </li>
+                        <li class="nav-item">
+                            Culture & Values
+                        </li>
+                        <li class="nav-item">
+                            Our People
+                        </li>
+                        <li class="nav-item">
+                            Sustainability
+                        </li>
+                        <li class="nav-item">
+                            Join the Team
+                        </li>
+                        <li class="nav-item">
+                            Innovation & Tech
+                        </li>
+                        <li class="nav-item">
+                            Coporate Responsibility
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="header__center" class="flex h-pad">
+            <div class="basis-1/3">
+                <a href="index.html">
+                    <img src="imgs/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="flex basis-1/3 justify-center">
+                <ul class="nav-list flex items-center">
+                    <li class="nav-item nav-item--has-children relative items-center">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item nav-item--has-children relative items-center">
+                        <a href="#">Solutions</a>
+                    </li>
+                    <li class="nav-item nav-item--has-children relative items-center">
+                        <a href="#">Sectors</a>
+                    </li>
+                    <li class="nav-item nav-item--has-children relative items-center">
+                        <a href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Prices</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="basis-1/3 flex justify-end gap-1">
+                <a href="#">
+                    <button class="center__cta center__cta--grey rounded-full">Call To Action 1</button>
+                </a>
+                <a href="#">
+                    <button class="center__cta center__cta--orange rounded-full">Call To Action 2</button>
+                </a>
+            </div>
+        </div>
+        <div id="header__bottom" class="flex h-pad text-center items-center relative">
+            <span class="basis-full">
+                We powered 250,000 climate-conscious meals a day at cop28  <a class="ml-3 underline font-bold" href="#">Read Article</a>
+            </span>
+            <img src="imgs/close-alert.svg" id="header__bottom__close" class="absolute"/>
+        </div>
+    </header>
+    <div id="main" class="flex h-pad">
+        <div class="main__container basis-1/2">
+            <!-- TODO: Add and style main content -->
+        </div>
+        <div class="main__container basis-1/2">
+            <!-- TODO: Add and style main content -->
+            <!-- <img src="imgs/pexels-andrea-piacquadio-3801701 1.jpg"/> -->
+        </div>
+    </div>
+    <footer class="h-pad flex items-center">
+        <span class="footer__text">Need help getting started?</span>
+        <a href="#">
+            <button class="footer__cta footer__cta--orange rounded-full">Contact Us</button>
+        </a>
+    </footer>
+</body>
+</html>
